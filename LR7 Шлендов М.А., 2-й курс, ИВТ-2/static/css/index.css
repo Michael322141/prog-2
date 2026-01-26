@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+#main_container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    /* padding: 100px; */
+}
+
+#main_container h1 {
+    font-size: 5em;
+}
+
+#main_container h4 {
+    font-size: 2em;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+#footer .version {
+    color: gray;
+}
