@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+}
+
+#main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 18px;
+}
+
+#page_title {
+    margin-top: 50px;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+.user_card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0px 3px 17px -2px rgba(0,0,0,0.65);
+    background-color: white;
+    color: black;
+    border-color: #ccc;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 16px 20px;
+    min-width: 500px;
+    min-height: 300px;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.user_card__name {
+    color: #ed6e6e;
+    font-weight: 600;
+}
+
+.user_card__currency {
+    color: #111;
+    font-weight: 500;
+}
+
+.user_card__currency::before {
+    content: '-';
+}
+
+.user_card__currency_code {
+    color: #444;
+}
+
+.user_card__currency {
+    margin-left: 8px;
+}
