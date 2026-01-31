@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ app.name }}</title>
+    <link href="/static/css/users.css" rel="stylesheet">
+    <link href="/static/css/topbar.css" rel="stylesheet">
+</head>
+<body>
+    {% include 'topbar.html' %}
+
+    <h1 id="page_title">Пользователи</h1>
+
+    <div id="main_container">
+        {% for user in users %}
+            <a class="user_card" href="/user?id={{ user.id }}">
+                <p class="user_card__name">{{ user.name }}</p>
+            </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

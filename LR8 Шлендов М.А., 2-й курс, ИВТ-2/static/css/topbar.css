@@ -1,0 +1,26 @@
+#topbar {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    background-color: #ed6e6e;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+#topbar #nav {
+    display: flex;
+    margin-left: auto;
+    gap: 12px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}

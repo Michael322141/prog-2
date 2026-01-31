@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ app.name }}</title>
+    <link href="/static/css/index.css" rel="stylesheet">
+    <link href="/static/css/topbar.css" rel="stylesheet">
+</head>
+<body>
+    {% include 'topbar.html' %}
+
+    <div id="main_container">
+        <h1>{{ app.name }}</h1>
+        <h4>Главная страница</h4>
+    </div>
+
+    <div id="footer">
+        <p><span class="version">Версия: {{ app.version }}</span></p>
+    </div>
+</body>
+</html>
